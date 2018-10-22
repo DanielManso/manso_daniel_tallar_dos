@@ -35,59 +35,65 @@
             </section>
         </nav>
 
-    <section class="header">
-        <header class="header__title">
+    <section class="infoProduct">
 
-            <h1> {{frasePitch}} </h1>
-         
-        </header>          
-    </section>
+     <article class="infoProduct__image">
+         <button ><img src="./imagenesTienda/iconoFlecha.png" >
+         </button>
 
+         <img src="{{productImage}}" alt="productImage">
 
-    <section class="filterOne">
+         <button ><img src="./imagenesTienda/iconoFlecha.png" >
+         </button>
+     </article>
 
-        <article class="filterOne__canten">
-          <img src="./imagenesTienda/iconoTermos.png" alt="iconCanten">
-          <h2>Termos</h2>
-        </article>
+     <article class="infoProduct__description">
 
-        <article class="filterOne__coolers">
-          <img src="./imagenesTienda/iconoMaletas.png" alt="iconCoolers">
-          <h2>Enfriadores</h2>
-        </article>
+         <div class="infoProduct__text">
+             <h1>{{productName}}</h1>
+             <h2>{{producPrice}}</h2>
+             <p>
+               {{producDescription}}
+             </p>
+         </div>
 
-        <article class="filterOne__extras">
-          <img src="./imagenesTienda/iconoExtras.png" alt="iconExtras">
-          <h2>Extras</h2>
-        </article>
+         <div class="infoProduct__options">
+           <aside class="infoProduct__quantity">
+               <h3 class="infoProduct__subTitle">ELIGE LA CANTIDAD:</h3>
+               <button></button>
+           </aside>
 
-        <article class="filterOne__collections">
-          <img src="./imagenesTienda/iconoColecciones.png" alt="iconCollections">
-          <h2>Colecciones</h2>
-        </article>
-
-    </section>
+            <aside class="infoProduct__buy">
+                <button>AÑADIR AL CARRITO</button>
+            </aside>
+         </div>      
+     </article>         
+                 
+    </section>  
 </section>
+
 
 <main class="prducts">
 
-    <section class="products__nameFilter">
+    <section class="characters">
+
+        <article class="characters__one">
+              <img src="./imagenesTienda/iconoCaract1.png" >
+        </article>
+
+        <article class="characters__two">
+              <img src="./imagenesTienda/iconoCaract2.png" >
+        </article>
+
         
-         <h1>{{nameFilter}}</h1>
+        <article class="characters__three">
+              <img src="./imagenesTienda/iconoCaract3.png" >
+        </article>
+        
     </section>
 
-    <section class="prduct">
 
-             <article class="product__parent">
-
-                <img id="product_one" class="product__image" src="{{imagenProducto}}" > 
-                <h2 class="product__name"> {{nombreProducto}} </h2>
-                <button>COMPRAR</button>    
-
-            </article>                                
-    </section>
-
-    <section class="return">
+     <section class="return">
 
         <article class="return__options">
          <h3>VOLVER ARRIBA</h3>
