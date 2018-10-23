@@ -12,28 +12,9 @@
 
 <body>
     <section id="headerimg">
-
-        <nav class="nav">
-
-            <section class="nav__logo">
-                <img class="nav__imag" src="./imagenesTienda/logo.png" alt="Logo Corkcicle">
-            </section>
-
-            <section class="nav__tags">
-
-                <ul type="none" class="nav_ul">
-                    <li class="nav__Busqueda">
-                        <img src="./imagenesTienda/iconoBusqueda.png" alt="Busqueda">
-                    </li>
-                    <li class="nav__Usiario">
-                        <img src="./imagenesTienda/iconoUsuario.png" alt="Usuario">
-                    </li>
-                    <li class="nav__Compra">
-                         <img src="./imagenesTienda/iconoCompra.png" alt="Compra">
-                    </li>
-                </ul>
-            </section>
-        </nav>
+    {{>nav}}
+    </section>
+    
 
     <section class="infoProduct">
 
@@ -73,20 +54,20 @@
 </section>
 
 
-<main class="prducts">
+<main class="characters">
 
     <section class="characters">
 
-        <article class="characters__one">
+        <article class="character__one">
               <img src="./imagenesTienda/iconoCaract1.png" >
         </article>
 
-        <article class="characters__two">
+        <article class="character__two">
               <img src="./imagenesTienda/iconoCaract2.png" >
         </article>
 
         
-        <article class="characters__three">
+        <article class="character__three">
               <img src="./imagenesTienda/iconoCaract3.png" >
         </article>
         
@@ -102,72 +83,9 @@
         </article>
         
     </section>
-                 
-    <footer class="footer">
-
-            <section class="footer__logos">
-                <img clas="footer__logo" src="./imagenes/logo.png" alt="logo">
-            </section>
-
-            <section class="footer__info">
-
-                <article clas="footer__tags">
-                    <ul type="none">
-                        <li>
-                            <h2>EMPRESA</h2>
-                        </li>
-                        <li> Acerca de</li>
-                        <li> Estilo de vida</li>
-                        <li> Carreras</li>
-                        <li> Tarjeta de regalo</li>
-                    </ul>
-                </article>
-
-                <article clas="footer__tags">
-                    <ul type="none">
-                        <li>
-                            <h2>APOYO</h2>
-                        </li>
-                        <li> Devoluciones</li>
-                        <li> Garantía</li>
-                        <li> Preguntas más frecuentes</li>
-                        <li> Política de privacidad</li>
-                    </ul>
-                </article>
-
-                <article clas="footer__tags">
-                    <ul type="none">
-                        <li>
-                            <h2>MAYORISTA</h2>
-                        </li>
-                        <li> Conviértase en un minorista</li>
-                        <li> Internacional</li>
-                        <li> Políticas de precios</li>
-                    </ul>
-                </article>
-
-                <article clas="footer__tags">
-                    <ul type="none">
-                        <li>
-                            <h2>CONTACTOS</h2>
-                        </li>
-                        <li> Contáctenos</li>
-                        <li> Pedidos personalizados</li>
-                    </ul>
-                </article>
-            </section>
-
-            <section class="footer__incons">
-                <img class="footer__incon" src="./imagenes/instagram.png" alt="facebook">
-                <img class="footer__incon" src="./imagenes/facebook.png" alt="instagram">
-                <img class="footer__incon" src="./imagenes/twitter.png" alt="pinterest">
-                <img class="footer__incon" src="./imagenes/pinterest.png" alt="twitter">
-            </section>
-
-            <section class="footer__text">
-                <h3> HEWY WINE CHILLER LLC 2018 </h3>
-            </section>
-    </footer>
+    
+     {{>landing}}    
+     {{>footer}}
 
     </main>
 
