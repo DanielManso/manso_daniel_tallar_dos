@@ -1,0 +1,72 @@
+  #headerimg {
+    width: 100%;
+    height: 600px;
+    background-image: url("/imagenes/footerUno.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    transition: 1s;
+  }
+  
+  .header {
+    color: #ffffff;
+    margin: 100px;
+    
+    &__title{
+      font-weight: 700;
+      font-size: 8vh;
+      margin-bottom: 0%;
+    }
+
+    &__subtitle{
+      font-weight: 300;
+      font-size: 4vh;
+    }
+
+  
+    &__button {
+      background-color:  #ff9d0a;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 200;
+      margin: 4px 2px;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    &__button:hover {
+      opacity: 1;
+      background-color: #bd7508;
+    }
+
+
+    .button:hover {opacity: 1}
+
+    @media screen and(max-width: 867px){
+       margin: 0%;
+       margin-left: 4%;               
+      }
+
+      &__title{
+        font-weight: 700;
+        font-size: 7vh;
+        margin-bottom: 0%;
+      }
+  
+      &__subtitle{
+        font-weight: 300;
+        font-size: 3vh;
+      }
+      
+  }
+
+
+ 
+  
+ 
