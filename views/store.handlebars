@@ -2,82 +2,95 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Corkcicle</title>
-    <link href="/style/NewStyle/mainStore.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-</head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Corkcicle</title>
+  <link href="/style/NewStyle/mainStore.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet"></head>
 
 <body>
-    
-    
-         {{>nav}}
-         {{>header}}         
-    
 
 
-    <section class="filterOne">
+  {{>nav}}
+  {{>header}}
 
-        <article class="filterOne__canten">
-          <a href=""><img src="./imagenesTienda/iconoTermos.png" alt="iconCanten"></a>
-          <h2>Termos</h2>
-        </article>
 
-        <article class="filterOne__coolers">
-          <a href=""><img src="./imagenesTienda/iconoMaletas.png" alt="iconCoolers"></a>
-          <h2>Enfriadores</h2>
-        </article>
 
-        <article class="filterOne__extras">
-          <a href=""><img src="./imagenesTienda/iconoExtras.png" alt="iconExtras"> </a>
-          <h2>Extras</h2>
-        </article>
+  <section class="filterOne">
 
-        <article class="filterOne__collections">
-          <img src="./imagenesTienda/iconoColecciones.png" alt="iconCollections">
-          <h2>Colecciones</h2>
-        </article>
+    <article class="filterOne__options">
+      <article class="filterOne__canten">
+        <a href=""><img src="./imagenesTienda/iconoTermos.png" alt="iconCanten"></a>
+      </article>
+      <h2>TERMOS</h2>
+    </article>
 
-    </section>
-</section>
+    <article class="filterOne__options">
+      <article class="filterOne__coolers">
+        <a href=""><img src="./imagenesTienda/iconoMaletas.png" alt="iconCoolers"></a>
+      </article>
+      <h2>ENFRIADORES</h2>
+    </article>
 
-<main class="prducts">
+    <article class="filterOne__options">
+      <section class="filterOne__extras">
+        <a href=""><img src="./imagenesTienda/iconoExtras.png" alt="iconExtras"> </a>
+      </section>
+      <h2>EXTRAS</h2>
+    </article>
+
+    <article class="filterOne__options">
+      <section class="filterOne__collections">
+        <a href=""><img src="./imagenesTienda/iconoColecciones.png" alt="iconCollections"></a>
+      </section>
+      <h2>COLECCIONES</h2>
+    </article>
+
+  </section>
+  </section>
+
+  <main class="prducts">
 
     <section class="products__nameFilter">
-        
-         <h1>{{nameFilter}}</h1>
+
+      <h1>{{nameFilter}}atera</h1>
     </section>
 
-    {{#each products}}
-    <section class="prduct">
 
-             <article class="product__parent">
+    <section class="products">
 
-                <img id="product_one" class="product__image" src="{{product__img}}" > 
-                <h2 class="product__name"> {{product__name}} </h2>
-                <button>COMPRAR</button>    
+      <section class="product">
+        {{#each products}}
+        <article class="product__parent">
 
-            </article>                                
+          <img class="product__image" src="{{product__img}}">
+          <h2 class="product__name"> {{product__name}} </h2>
+          <a class="product__button" href=" "><button>COMPRAR</button></a>
+
+        </article>
+        {{/each}}
+      </section>
+
     </section>
-    {{/each}}
+
+
 
     <section class="return">
 
-        <article class="return__options">
-         <h3>VOLVER ARRIBA</h3>
-         <img src="./imagenesTienda/iconoFlecha.png" alt="return">
+      <article class="return__options">
+        <h3>VOLVER ARRIBA</h3>
+        <img src="./imagenesTienda/iconoFlecha.png" alt="return">
 
-        </article>
-        
+      </article>
+
     </section>
 
-      {{>footer}}  
-                
-    </main>
+    {{>footer}}
 
-    <script src="./style/script.js"></script>
+  </main>
+
+  <script src="./style/script.js"></script>
 </body>
 
 </html>

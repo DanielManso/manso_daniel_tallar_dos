@@ -31,8 +31,12 @@ app.get("/", function (req, res) {
     res.render("index");
 });
 
+
+
 app.get("/store", function (req, res) {
-    products.find({}).toArray(function (err, docs) {
+    products.find({
+        product__Type: "filterOne",
+    }).toArray(function (err, docs) {
         if (err) {
             console.log(err);
             return;
