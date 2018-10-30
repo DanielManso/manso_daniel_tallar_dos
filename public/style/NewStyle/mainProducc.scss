@@ -1,0 +1,18 @@
+body {
+    max-width: 1920px;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    margin: auto;
+    background-color: #ffd11b23;
+    height: fit-content;
+}
+
+@import "../NewStyle/navStore";
+@import "../NewStyle/header";
+@import "../NewStyle/landing";
+@import "../NewStyle/footer";
+
+
+.return {
+    text-align: center;
+}
