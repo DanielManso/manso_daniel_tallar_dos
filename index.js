@@ -34,19 +34,75 @@ app.get("/", function (req, res) {
 
 
 app.get("/store", function (req, res) {
-    products.find({
-        product__Type: "filterOne",
-    }).toArray(function (err, docs) {
-        if (err) {
-            console.log(err);
-            return;
+    var filter = "filterOne"
+    if (req.query.product__filter !== null || req.query.product__filter !== "" || req.query.product__filter !== undefined) {
+        filter = req.query.product__filter;
+        products.find({
+            product__filter: filter,
+        }).toArray(function (err, docs) {
+            if (err) {
+                console.log(err);
+                return;
+            }
+
+            var context = {
+                products: docs,
+                collection: filter,
+            };
+
+            var product = findObject(docs, "product__name", "Clasico");
+            if (product !== null) {
+                products.find({
+                    product__Type: "filterTwo",
+                }).toArray(function (err, docs) {
+                    if (err) {
+                        console.log(err);
+                        return;
+                    }
+        
+                    var context = {
+                        products: docs,
+                        collection: filter,
+                    };
+                    res.render("product", docs);
+                });
+                
+            } else {
+                res.render("store", context);
+
+            }
+        });
+     }else {
+        products.find({
+            product__Type: "filterOne",
+        }).toArray(function (err, docs) {
+            if (err) {
+                console.log(err);
+                return;
+            }
+
+            var context = {
+                products: docs,
+            };
+            res.render("store", context);
+        });
+    }
+
+
+});
+
+function findObject(array, key, value) {
+    for (let index = 0; index < array.length; index++) {
+        if (array[index][key] === value) {
+            return array[index];
+
         }
 
-        var context = {
-            products: docs,
-        };
-        res.render("store", context);
-    });
-    
-});
+    }
+    return null;
+
+};
+
+
+
 app.listen(5500);

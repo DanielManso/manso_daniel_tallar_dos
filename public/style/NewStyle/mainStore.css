@@ -3,7 +3,7 @@ body {
   width: 100%;
   font-family: 'Lato', sans-serif;
   margin: auto;
-  background-color: #ffd11b23;
+  background-color: #ffd11b1f;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -232,28 +232,28 @@ body {
 
 .filterOne__canten {
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 50%;
   background: #FFD800;
 }
 
 .filterOne__coolers {
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 50%;
   background: #00CA95;
 }
 
 .filterOne__extras {
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 50%;
   background: #FF9274;
 }
 
 .filterOne__collections {
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 50%;
   background: #F86BBD;
 }

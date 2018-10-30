@@ -3,13 +3,36 @@ body {
     width: 100%;
     font-family: 'Lato', sans-serif;
     margin: auto;
-    background-color: #ffd11b23;
+    background-color: #ffd11b1f;
     height: fit-content;
 }
 
 @import "../NewStyle/navStore";
 @import "../NewStyle/footer";
-@import "../NewStyle/header";
+.header {
+    background-image:url("/imagenesTienda/footerTienda0.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    max-width: 1300px;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+    
+    &__title{
+      font-weight: 700;
+      font-size: 35px;
+      margin-bottom: 0%;
+      text-align: center;
+      color: #ffffff;
+    }
+}
 
 .return {
     text-align: center;
@@ -37,7 +60,7 @@ body {
     background-color: #fff;
 
     &__canten {
-        width: 25%;
+        width: 100%;
         height: auto;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
@@ -46,8 +69,8 @@ body {
     }
 
     &__coolers {
-        width: 25%;
-        height: auto%;
+        width: 100%;
+        height: auto;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
         border-radius: 50%;
@@ -55,7 +78,7 @@ body {
     }
 
     &__extras {
-        width: 25%;
+        width: 100%;
         height: auto;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
@@ -64,7 +87,7 @@ body {
     }
 
     &__collections {
-        width: 25%;
+        width: 100%;
         height: auto;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;

@@ -11,106 +11,112 @@
 </head>
 
 <body>
- 
-     {{>nav}}
-     {{>header}}
-    
+
+    {{>nav}}
+    {{>header}}
+
 
     <section class="filter">
 
         <article class="filter__colour">
 
-            <button class="filter__one">
-             <img src="./imagenesTienda/filtroTres1.png" >
-            </button>
+            <a class="filter__one">
+                <img src="./imagenesTienda/filtroTres1.png">
+            </a>
 
-            <button class="filter__two">
-             <img src="./imagenesTienda/filtroTres1.png" >
-            </button>
+            <a class="filter__two">
+                <img src="./imagenesTienda/filtroTres1.png">
+            </a>
 
-            <button class="filter__three">
-             <img src="./imagenesTienda/filtroTres1.png" >
-            </button>
+            <a class="filter__three">
+                <img src="./imagenesTienda/filtroTres1.png">
+            </a>
 
-            <button class="filter__four">
-             <img src="./imagenesTienda/filtroTres1.png" >
-            </button>
+            <a class="filter__four">
+                <img src="./imagenesTienda/filtroTres1.png">
+            </a>
 
-            <button class="filter__five">
-             <img src="./imagenesTienda/filtroTres1.png" >
-            </button>
+            <a class="filter__five">
+                <img src="./imagenesTienda/filtroTres1.png">
+            </a>
 
-            <button class="filter__sixe">
-             <img src="./imagenesTienda/filtroTres1.png" >
-            </button>
+            <a class="filter__sixe">
+                <img src="./imagenesTienda/filtroTres1.png">
+            </a>
 
-            <button class="filter__seven">
-             <img src="./imagenesTienda/filtroTres1.png" >
-            </button>
+            <a class="filter__seven">
+                <img src="./imagenesTienda/filtroTres1.png">
+            </a>
 
-            <button class="filter__eight">
-             <img src="./imagenesTienda/filtroTres1.png" >
-            </button>
+            <a class="filter__eight">
+                <img src="./imagenesTienda/filtroTres1.png">
+            </a>
 
-            <button class="filter__ten">
-             <img src="./imagenesTienda/filtroTres1.png" >
-            </button>
+            <a class="filter__ten">
+                <img src="./imagenesTienda/filtroTres1.png">
+            </a>
         </article>
 
         <article class="filter__size">
 
-            <button class="filter__everyone">
-             <img src="./imagenesTienda/filtroTres1.png" >
-             <h3>Todos</h3>
-            </button>
+            <a class="filter__everyone">
+                <img src="./imagenesTienda/filtroTres1.png">
+                <h3>Todos</h3>
+            </a>
 
-            <button class="filter__25OZ">
-             <img src="./imagenesTienda/filtroTres2.png" >
-             <h3>25 OZ</h3>
-            </button>
+            <a class="filter__25OZ">
+                <img src="./imagenesTienda/filtroTres2.png">
+                <h3>25 OZ</h3>
+            </a>
 
-            <button class="filter__16OZ">
-             <img src="./imagenesTienda/filtroTres3.png" >
-             <h3>16 OZ</h3>
-            </button>
+            <a class="filter__16OZ">
+                <img src="./imagenesTienda/filtroTres3.png">
+                <h3>16 OZ</h3>
+            </a>
 
-            <button class="filter__9OZ">
-             <img src="./imagenesTienda/filtroTres4.png" >
-             <h3>9 OZ</h3>
-            </button>
+            <a class="filter__9OZ">
+                <img src="./imagenesTienda/filtroTres4.png">
+                <h3>9 OZ</h3>
+            </a>
         </article>
-       
+
     </section>
-</section>
-
-<main class="prducts">
-
-    <section class="prduct">
-
-             <article class="product__parent">
-
-                <img id="product_one" class="product__image" src="{{imageProduct}}" > 
-                <h2 class="product__name"> {{nameProduct}} </h2>
-                <h3 class="product__size">{{sizeProduct}}</h3>
-                <button>{{priceProduct}}</button>    
-
-            </article>                                
     </section>
 
-    <section class="return">
+    <main class="prducts">
 
-        <article class="return__options">
-         <h3>VOLVER ARRIBA</h3>
-         <img src="./imagenesTienda/iconoFlecha.png" alt="return">
 
-        </article>
-        
-    </section>
-                 
-     {{>landing}}
+        <section class="products">
 
-     {{>footer}}
-    
+            <section class="product">
+                {{#each products}}
+                <article class="product__parent">
+
+                    <img id="product_one" class="product__image" src="{{product__img}}">
+                    <h2 class="product__name"> {{product__name}} {{product__colecction}} </h2>
+                    <h3 class="product__size">{{product__size}}</h3>
+                    <a href="  "><button>{{product__price:}}</button></a>
+
+                </article>
+                {{/each}}
+            </section>
+        </section>>
+
+        <section class="return">
+
+            <article class="return__options">
+                <a href="">
+                    <h3>VOLVER ARRIBA</h3>
+                    <img src="./imagenesTienda/iconoFlecha.png" alt="return">
+                </a>
+            </article>
+
+        </section>
+
+        {{>landing}}
+
+        {{>footer}}
+
     </main>
 
     <script src="./style/script.js"></script>

@@ -1508,3 +1508,62 @@ products.insertMany([
 
    
 ]);
+
+
+app.get("/store", function (req, res) {
+    var filter = "filterOne"
+    if (req.query.product__filter !== null || req.query.product__filter !== "" || req.query.product__filter !== undefined) {
+        filter = req.query.product__filter;
+        products.find({
+            product__filter: filter,
+        }).toArray(function (err, docs) {
+            if (err) {
+                console.log(err);
+                return;
+            }
+
+            var contextuno = {
+                products: docs,
+                collection: filter,
+            };
+
+            var product = findObject(docs, "product__collection", "clasico");
+            if (product !== null || product !== undefined) {
+                products.find({
+                    product__Type: "filterTwo",
+                    product__colecction:"clasico",
+                }).toArray(function (err, docs) {
+                    if (err) {
+                        console.log(err);
+                        return;
+                    }
+
+                    var context = {
+                        products: docs,
+                        collection: filter,
+                    };
+                    res.render("product", context);
+                });
+
+            }else{
+                res.render("store", contextuno);
+            }
+        });
+    } else {
+        products.find({
+            product__Type: "filterOne",
+        }).toArray(function (err, array) {
+            if (err) {
+                console.log(err);
+                return;
+            }
+
+            var context = {
+                products: array,
+            };
+            res.render("store", context);
+        });
+    }
+
+
+});
