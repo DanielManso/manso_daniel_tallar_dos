@@ -8,7 +8,12 @@ body {
 }
 
 @import "../NewStyle/navStore";
+@import "../NewStyle/landing";
 @import "../NewStyle/footer";
+@import "../NewStyle/filters";
+
+
+
 .header {
     background-image:url("/imagenesTienda/footerTienda0.png"); 
     background-repeat: no-repeat;
@@ -59,40 +64,39 @@ body {
     text-align: center;
     background-color: #fff;
 
-    &__canten {
+
+    img{
         width: 100%;
         height: auto;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        background: #FFD800;
+        margin: auto;
     }
 
-    &__coolers {
-        width: 100%;
+    &__clasico{
+        width: 60%;
+        margin: auto;
         height: auto;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        background: #00CA95;
+        
     }
 
-    &__extras {
-        width: 100%;
+    &__metalico {
+        width: 60%;
+        margin: auto;
         height: auto;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        background: #FF9274;
+        
     }
 
-    &__collections {
-        width: 100%;
+    &__gimnasio {
+        width: 60%;
+        margin: auto;
         height: auto;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        background: #F86BBD;
+       
+    }
+
+    &__surf {
+        width: 60%;
+        margin: auto;
+        height: auto;
+       
     }
 }
 
@@ -157,6 +161,26 @@ body {
             padding-right: 1%;
         }
 
+        &__size{
+            font-size: 25px;
+            font-weight: 100;
+            color: #000000;
+            padding-left: 1%;
+            padding-right: 1%;
+
+        }
+
+        &__price{
+            font-size: 25px;
+            font-weight: 300;
+            color: #000000;
+            padding-left: 1%;
+            padding-right: 1%;
+
+        }
+
+
+
         img {
            width: 100%;
            height: auto;
@@ -174,3 +198,5 @@ body {
         }
     }
 }
+
+

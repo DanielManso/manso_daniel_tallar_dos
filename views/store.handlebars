@@ -30,37 +30,37 @@
 
     <article class="filterOne__options">
       <a href="" class="filterOne__clikCan">
-        <article class="filterOne__canten">
-          <a href="/store?product__filter=termo"><img src="./imagenesTienda/iconoTermos.png" alt="iconCanten"></a>
+        <article class="filterOne__clasico">
+          <a href="/store?product__collectio=CLASICO"><img src="./imagenesTienda/Collections/clasico.png" alt="iconCanten"></a>
         </article>
-        <h2>TERMOS</h2>
+        <h2>CLASICOS</h2>
       </a>
     </article>
 
     <article class="filterOne__options">
       <a href="" class="filterOne__clikCoo">
-        <article class="filterOne__coolers">
-          <a href="/store?product__filter=cooler"><img src="./imagenesTienda/iconoMaletas.png" alt="iconCoolers"></a>
+        <article class="filterOne__metalico">
+          <a href="/store?product__collectio=METALICO"><img src="./imagenesTienda/Collections/metalico.png" alt="iconCoolers"></a>
         </article>
-        <h2>ENFRIADORES</h2>
+        <h2>METALICOS</h2>
       </a>
     </article>
 
     <article class="filterOne__options">
       <a href="" class="filterOne__clikExt">
-        <section class="filterOne__extras">
-          <a href="/store?product__filter=extras"><img src="./imagenesTienda/iconoExtras.png" alt="iconExtras"> </a>
+        <section class="filterOne__gimnasio">
+          <a href="/store?product__collectio=GIMNASIO"><img src="./imagenesTienda/Collections/gimnasio.png" alt="iconExtras"> </a>
         </section>
-        <h2>EXTRAS</h2>
+        <h2>GIMNASIO</h2>
       </a>
     </article>
 
     <article class="filterOne__options">
       <a href="" class="filterOne__clikCol">
-        <section class="filterOne__collections">
-          <a href="/store?product__filter=collection"><img src="./imagenesTienda/iconoColecciones.png" alt="iconCollections"></a>
+        <section class="filterOne__surf">
+          <a href="/store?product__collectio=SURF"><img src="./imagenesTienda/Collections/surf.png" alt="iconCollections"></a>
         </section>
-        <h2>COLECCIONES</h2>
+        <h2>SURF</h2>
       </a>
     </article>
 
@@ -73,11 +73,12 @@
     <section class="nameFilter">
 
       <div class="nameFilter__line"></div>
-
-      <h1 class="nameFilter__title">{{collection}}</h1>
+      <h1 class="nameFilter__title">{{collectio}}</h1>
       <div class="nameFilter__line"></div>
 
     </section>
+
+     {{>filters}}
 
 
     <section class="products">
@@ -87,7 +88,9 @@
         <article class="product__parent">
 
           <img class="product__image" src="{{product__img}}">
-          <h2 class="product__name"> {{product__name}} </h2>
+          <h2 class="product__name"> {{product__name}} {{product__collectio}} </h2>
+          <h3 class="product__price">{{product__price}}</h3>
+          <h3 class="product__size">{{product__size}}</h3>
           <a class="product__button" href="/store?product__name={{product__name}}"><button>COMPRAR</button></a>
 
         </article>
@@ -111,6 +114,8 @@
 
     </section>
 
+    
+    {{>landing}}
     {{>footer}}
 
   </main>

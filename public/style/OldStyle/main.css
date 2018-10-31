@@ -3,7 +3,7 @@ body {
   width: 100%;
   font-family: 'Lato', sans-serif;
   margin: auto;
-  background-color: #ffd11b23;
+  background-color: #ffffff;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -55,12 +55,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
+  color: black;
 }
 
 .nav li {
   text-align: center;
   padding: 8px;
   text-decoration: none;
+  color: black;
 }
 
 @media screen and (max-width: 867px) {

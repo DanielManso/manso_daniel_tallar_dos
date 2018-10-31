@@ -13,6 +13,15 @@ const mongoclient = new MongoClient(mongoURL);
 
 var products = null;
 
+function findObj(array, key, value) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i][key] === value) {
+            return array[i];
+        }
+    }
+    return null;
+}
+
 mongoclient.connect(function (err) {
     assert.equal(null, err);
     console.log("Funciona");
@@ -31,78 +40,73 @@ app.get("/", function (req, res) {
     res.render("index");
 });
 
-
-
 app.get("/store", function (req, res) {
-    var filter = "filterOne"
-    if (req.query.product__filter !== null || req.query.product__filter !== "" || req.query.product__filter !== undefined) {
-        filter = req.query.product__filter;
+    var filter = req.query.product__collectio;
+    var filterZise = req.query.product__size;
+
+    //var name = req.query.product__nameFilter;
+
+    if (filter !== null && filter !== '' && filter !== undefined) {
         products.find({
-            product__filter: filter,
-        }).toArray(function (err, docs) {
+            "product__collectio": filter,
+        }).toArray(function (err, array) {
             if (err) {
                 console.log(err);
                 return;
             }
-
             var context = {
-                products: docs,
-                collection: filter,
+                products: array,
+                collectio: filter,
             };
 
-            var product = findObject(docs, "product__name", "Clasico");
-            if (product !== null) {
-                products.find({
-                    product__Type: "filterTwo",
-                }).toArray(function (err, docs) {
-                    if (err) {
-                        console.log(err);
-                        return;
-                    }
-        
-                    var context = {
-                        products: docs,
-                        collection: filter,
-                    };
-                    res.render("product", docs);
-                });
-                
-            } else {
-                res.render("store", context);
-
-            }
-        });
-     }else {
-        products.find({
-            product__Type: "filterOne",
-        }).toArray(function (err, docs) {
-            if (err) {
-                console.log(err);
-                return;
-            }
-
-            var context = {
-                products: docs,
-            };
-            res.render("store", context);
+           // var product = findObjectByKey(array, "product__nameFilter", name);
+            //if (product !== null) {
+            //    res.render('bill', product);
+            //} else {
+            //    res.render('store', context);
+            //}
         });
     }
+    else if (filterZise !== null && filterZise !== '' && filterZise !== undefined) {
+        products.find({
+            "product__size": filterZise,
+        }).toArray(function (err, array) {
+            if (err) {
+                console.log(err);
+                return;
+            }
+            var context = {
+                products: array,
+                collection: filterZise,
+            };
+            res.render('store', context);
+        });
+    }
+  
+    else {
+        products.find({
+            product__Type: 'filterTwo',
+        }).toArray(function (err, array) {
+            if (err) {
+                console.log(err);
+                return;
+            }
+            var context = {
+                products: array,
+            };
 
-
+            res.render('store', context);
+        });
+    }
 });
 
-function findObject(array, key, value) {
-    for (let index = 0; index < array.length; index++) {
-        if (array[index][key] === value) {
-            return array[index];
-
+function findObjectByKey(array, key, value) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i][key] === value) {
+            return array[i];
         }
-
     }
     return null;
-
-};
-
-
+}
 
 app.listen(5500);
