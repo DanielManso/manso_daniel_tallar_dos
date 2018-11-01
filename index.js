@@ -43,8 +43,9 @@ app.get("/", function (req, res) {
 app.get("/store", function (req, res) {
     var filter = req.query.product__collectio;
     var filterZise = req.query.product__size;
+    var filterColour = req.query.product__colour;
 
-    //var name = req.query.product__nameFilter;
+    var name = req.query.product__nameFilter;
 
     if (filter !== null && filter !== '' && filter !== undefined) {
         products.find({
@@ -59,12 +60,12 @@ app.get("/store", function (req, res) {
                 collectio: filter,
             };
 
-           // var product = findObjectByKey(array, "product__nameFilter", name);
-            //if (product !== null) {
-            //    res.render('bill', product);
-            //} else {
-            //    res.render('store', context);
-            //}
+            var product = findObjectByKey(array, "product__nameFilter", name);
+            if (product !== null && product !== undefined) {
+                res.render('bill', product);
+            } else {
+                res.render('store', context);
+            }
         });
     }
     else if (filterZise !== null && filterZise !== '' && filterZise !== undefined) {
@@ -79,10 +80,32 @@ app.get("/store", function (req, res) {
                 products: array,
                 collection: filterZise,
             };
+
+
+            var product = findObjectByKey(array, "product__nameFilter", name);
+            if (product !== null && product !== undefined) {
+                res.render('bill', product);
+            } else {
+                res.render('store', context);
+            }
+        });
+    }
+    else if (filterColour !== null && filterColour !== '' && filterColour !== undefined) {
+        products.find({
+            "product__colour": filterColour,
+        }).toArray(function (err, array) {
+            if (err) {
+                console.log(err);
+                return;
+            }
+            var context = {
+                products: array,
+                collection: filterColour,
+            };
             res.render('store', context);
         });
     }
-  
+
     else {
         products.find({
             product__Type: 'filterTwo',
@@ -95,9 +118,19 @@ app.get("/store", function (req, res) {
                 products: array,
             };
 
-            res.render('store', context);
+
+            var product = findObjectByKey(array, "product__nameFilter", name);
+            if (product !== null && product !== undefined) {
+                res.render('bill', product);
+            } else {
+                res.render('store', context);
+            }
         });
     }
+});
+
+app.get('/checkOut', function(req, res){
+    res.render('checkOut');
 });
 
 function findObjectByKey(array, key, value) {

@@ -10,12 +10,11 @@ body {
 @import "../NewStyle/navStore";
 @import "../NewStyle/landing";
 @import "../NewStyle/footer";
+@import "../NewStyle/bill";
+@import "../NewStyle/checkOut";
 @import "../NewStyle/filters";
-
-
-
 .header {
-    background-image:url("/imagenesTienda/footerTienda0.png"); 
+    background-image: url("/imagenesTienda/footerTienda0.png");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -28,23 +27,19 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    
-    
-    &__title{
-      font-weight: 700;
-      font-size: 35px;
-      margin-bottom: 0%;
-      text-align: center;
-      color: #ffffff;
+    &__title {
+        font-weight: 700;
+        font-size: 35px;
+        margin-bottom: 0%;
+        text-align: center;
+        color: #ffffff;
     }
 }
 
 .return {
     text-align: center;
     opacity: .5;
-
-
-    &__clik{
+    &__clik {
         text-decoration: none;
         color: #000;
         font-weight: 200;
@@ -63,140 +58,225 @@ body {
     justify-content: space-around;
     text-align: center;
     background-color: #fff;
-
-
-    img{
+    img {
         width: 100%;
         height: auto;
         margin: auto;
     }
-
-    &__clasico{
+    &__clasico {
         width: 60%;
         margin: auto;
         height: auto;
-        
     }
-
     &__metalico {
         width: 60%;
         margin: auto;
         height: auto;
-        
     }
-
     &__gimnasio {
         width: 60%;
         margin: auto;
         height: auto;
-       
     }
-
     &__surf {
         width: 60%;
         margin: auto;
         height: auto;
-       
     }
 }
 
-.nameFilter{
-    max-width: 1100px;
-    width: 100%;
-    height: auto;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: baseline;
-    justify-content: space-between;
-   
-
-     &__line{
-         height: 3px;
-         width: 30%;
-         background-color: #000000;
-       
-     }
-         
-     &__title{
-         padding: 2%;
-         font-size: 35px;
-         font-weight: bold 700;
-         color: #000000;
-     }
-}
-
- 
-.products {
-    max-width: 1100px;
-    width: 100%;
-    height: auto;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-
-.product {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    
-    &__parent {
-        margin-bottom: 3%;
-        padding: 2%;
-        align-content: center;
-        width: 25%;
+@media screen and(max-width: 800px) {
+    .filterOne {
+        max-width: 1300px;
+        width: 100%;
         height: auto;
-        
-        h2{
-            font-size: 25px;
-            font-weight: 400;
-            color: #000000;
-            padding-left: 1%;
-            padding-right: 1%;
-        }
-
-        &__size{
-            font-size: 25px;
-            font-weight: 100;
-            color: #000000;
-            padding-left: 1%;
-            padding-right: 1%;
-
-        }
-
-        &__price{
-            font-size: 25px;
-            font-weight: 300;
-            color: #000000;
-            padding-left: 1%;
-            padding-right: 1%;
-
-        }
-
-
-
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        background-color: #fff;
         img {
-           width: 100%;
-           height: auto;
-           border-radius: 50%;
-        }
-
-        button{           
-            font-size: 20px;
-            font-weight: 200;
-            color: #ffffff;
             width: 100%;
-            height: 45px;
+            height: auto;
+            margin: auto;
+        }
+        &__clasico {
+            width: 50%;
+            margin: auto;
+            height: auto;
+        }
+        &__metalico {
+            width: 50%;
+            margin: auto;
+            height: auto;
+        }
+        &__gimnasio {
+            width: 50%;
+            margin: auto;
+            height: auto;
+        }
+        &__surf {
+            width: 50%;
+            margin: auto;
+            height: auto;
+        }
+     }
+    }
+    .nameFilter {
+        max-width: 1100px;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: baseline;
+        justify-content: space-between;
+        &__line {
+            height: 3px;
+            width: 30%;
             background-color: #000000;
-            border: 0ch;
+        }
+        &__title {
+            padding: 2%;
+            font-size: 35px;
+            font-weight: bold 700;
+            color: #000000;
         }
     }
-}
+
+
+    .products {
+        max-width: 1100px;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    .product {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        &__parent {
+            margin-bottom: 3%;
+            padding: 2%;
+            align-content: center;
+            width: 25%;
+            height: auto;
+            h2 {
+                font-size: 25px;
+                font-weight: 400;
+                color: #000000;
+                padding-left: 1%;
+                padding-right: 1%;
+            }
+            &__size {
+                font-size: 25px;
+                font-weight: 100;
+                color: #000000;
+                padding-left: 1%;
+                padding-right: 1%;
+            }
+            &__price {
+                font-size: 25px;
+                font-weight: 300;
+                color: #000000;
+                padding-left: 1%;
+                padding-right: 1%;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+            }
+            button {
+                font-size: 20px;
+                font-weight: 200;
+                color: #ffffff;
+                width: 100%;
+                height: 45px;
+                background-color: #000000;
+                border: 0ch;
+            }
+        }
+    }
+
+    @media screen and(max-width: 800px) {
+        .products {
+            max-width: 1100px;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+
+            &__parent {
+                margin-bottom: 5%;
+                padding: 5%;
+                align-content: center;
+                width: 100%;
+                height: auto;
+                h2 {
+                    font-size: 25px;
+                    font-weight: 400;
+                    color: #000000;
+                    padding-left: 1%;
+                    padding-right: 1%;
+                }
+                &__size {
+                    font-size: 25px;
+                    font-weight: 100;
+                    color: #000000;
+                    padding-left: 1%;
+                    padding-right: 1%;
+                }
+                &__price {
+                    font-size: 25px;
+                    font-weight: 300;
+                    color: #000000;
+                    padding-left: 1%;
+                    padding-right: 1%;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 50%;
+                }
+                button {
+                    font-size: 20px;
+                    font-weight: 200;
+                    color: #ffffff;
+                    width: 100%;
+                    height: 45px;
+                    background-color: #000000;
+                    border: 0ch;
+                }
+            }
+        }
+
+
+
+    }
+
+
 
 

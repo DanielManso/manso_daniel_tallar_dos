@@ -367,6 +367,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "29",
         product__colour: "rosado",
         product__collectio:"CLASICO",
         product__img: "/imagenesTienda/Products/TermosClasicos/termoR3.png",
@@ -379,6 +380,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "30",
         product__colour: "turqueza",
         product__collectio:"CLASICO",
         product__img: "/imagenesTienda/Products/TermosClasicos/termoT1.png",
@@ -391,6 +393,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "31",
         product__colour: "turqueza",
         product__collectio:"CLASICO",
         product__img: "/imagenesTienda/Products/TermosClasicos/termoT2.png",
@@ -403,6 +406,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "32",
         product__colour: "turqueza",
         product__collectio:"CLASICO",
         product__img: "/imagenesTienda/Products/TermosClasicos/termoT3.png",
@@ -415,6 +419,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "33",
         product__colour: "azul",
         product__collectio:"GIMNASIO",
         product__img: "/imagenesTienda/Products/Gimnasio/azul1.png",
@@ -427,6 +432,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "34",
         product__colour: "azul",
         product__collectio:"GIMNASIO",
         product__img: "/imagenesTienda/Products/Gimnasio/azul2.png",
@@ -439,6 +445,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "35",
         product__colour: "rosado",
         product__collectio:"GIMNASIO",
         product__img: "/imagenesTienda/Products/Gimnasio/rosa1.png",
@@ -451,6 +458,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "36",
         product__colour: "rosado",
         product__collectio:"GIMNASIO",
         product__img: "/imagenesTienda/Products/Gimnasio/rosa2.png",
@@ -463,6 +471,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "37",
         product__colour: "cafe",
         product__collectio:"METALICO",
         product__img: "/imagenesTienda/Products/Metalico/cafe1.png",
@@ -475,6 +484,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "38",
         product__colour: "cafe",
         product__collectio:"METALICO",
         product__img: "/imagenesTienda/Products/Metalico/cafe2.png",
@@ -487,6 +497,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "39",
         product__colour: "negro",
         product__collectio:"METALICO",
         product__img: "/imagenesTienda/Products/Metalico/negro1.png",
@@ -499,6 +510,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "40",
         product__colour: "negro",
         product__collectio:"METALICO",
         product__img: "/imagenesTienda/Products/Metalico/negro2.png",
@@ -511,6 +523,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "41",
         product__colour: "rosado",
         product__collectio:"METALICO",
         product__img: "/imagenesTienda/Products/Metalico/rosa1.png",
@@ -523,6 +536,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "42",
         product__colour: "rosado",
         product__collectio:"METALICO",
         product__img: "/imagenesTienda/Products/Metalico/rosa2.png",
@@ -535,6 +549,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "43",
         product__colour: "gris",
         product__collectio:"METALICO",
         product__img: "/imagenesTienda/Products/Metalico/gris1.png",
@@ -547,6 +562,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "44",
         product__colour: "gris",
         product__collectio:"METALICO",
         product__img: "/imagenesTienda/Products/Metalico/gris2.png",
@@ -559,6 +575,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "45",
         product__colour: "gris",
         product__collectio:"METALICO",
         product__img: "/imagenesTienda/Products/Metalico/gris3.png",
@@ -571,6 +588,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "46",
         product__colour: "azul",
         product__collectio:"SURF",
         product__img: "/imagenesTienda/Products/Surf/azul1.png",
@@ -583,6 +601,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "47",
         product__colour: "azul",
         product__collectio:"SURF",
         product__img: "/imagenesTienda/Products/Surf/azul2.png",
@@ -595,6 +614,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "48",
         product__colour: "azul",
         product__collectio:"SURF",
         product__img: "/imagenesTienda/Products/Surf/azul3.png",
@@ -607,6 +627,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "49",
         product__colour: "azul",
         product__collectio:"SURF",
         product__img: "/imagenesTienda/Products/Surf/azul4.png",
@@ -619,6 +640,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "50",
         product__colour: "negro",
         product__collectio:"SURF",
         product__img: "/imagenesTienda/Products/Surf/negro1.png",
@@ -631,6 +653,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "51",
         product__colour: "negro",
         product__collectio:"SURF",
         product__img: "/imagenesTienda/Products/Surf/negro2.png",
@@ -643,6 +666,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "52",
         product__colour: "negro",
         product__collectio:"SURF",
         product__img: "/imagenesTienda/Products/Surf/negro4.png",
@@ -655,6 +679,7 @@ products.insertMany([
     
     {
         product__name: "TERMO",
+        product__nameFilter: "53",
         product__colour: "negro",
         product__collectio:"SURF",
         product__img: "/imagenesTienda/Products/Surf/negro5.png",
@@ -667,6 +692,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "54",
         product__colour: "rosado",
         product__collectio:"SURF",
         product__img: "/imagenesTienda/Products/Surf/rojo1.png",
@@ -679,6 +705,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "55",
         product__colour: "rosado",
         product__collectio:"SURF",
         product__img: "/imagenesTienda/Products/Surf/rojo2.png",
@@ -691,6 +718,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "56",
         product__colour: "rosado",
         product__collectio:"SURF",
         product__img: "/imagenesTienda/Products/Surf/rosa1.png",
@@ -703,6 +731,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "57",
         product__colour: "rosado",
         product__collectio:"SURF",
         product__img: "/imagenesTienda/Products/Surf/rosa2.png",
@@ -715,6 +744,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "58",
         product__colour: "verde",
         product__collectio:"SURF",
         product__img: "/imagenesTienda/Products/Surf/verde1.png",
@@ -727,6 +757,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "59",
         product__colour: "verde",
         product__collectio:"SURF",
         product__img: "/imagenesTienda/Products/Surf/verde2.png",
@@ -739,6 +770,7 @@ products.insertMany([
 
     {
         product__name: "TERMO",
+        product__nameFilter: "60",
         product__colour: "verde",
         product__collectio:"SURF",
         product__img: "/imagenesTienda/Products/Surf/verde3.png",
@@ -752,6 +784,7 @@ products.insertMany([
     
     {
         product__name: "TERMO",
+        product__nameFilter: "61",
         product__colour: "verde",
         product__collectio:"SURF",
         product__img: "/imagenesTienda/Products/Surf/verde4.png",

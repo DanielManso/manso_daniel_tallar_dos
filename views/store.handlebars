@@ -89,9 +89,9 @@
 
           <img class="product__image" src="{{product__img}}">
           <h2 class="product__name"> {{product__name}} {{product__collectio}} </h2>
-          <h3 class="product__price">{{product__price}}</h3>
+          <h3 class="product__price">${{product__price}}</h3>
           <h3 class="product__size">{{product__size}}</h3>
-          <a class="product__button" href="/store?product__name={{product__name}}"><button>COMPRAR</button></a>
+          <a class="product__button" href="/store?product__nameFilter={{product__nameFilter}}"><button>VER MAS</button></a>
 
         </article>
         {{/each}}
@@ -120,7 +120,7 @@
 
   </main>
 
-  <script src="./style/script.js"></script>
+  <script src="/tienda.js"></script>
 </body>
 
 </html>
