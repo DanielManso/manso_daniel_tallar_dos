@@ -97,6 +97,7 @@ body {
 
 @media screen and (max-width: 867px) {
   .nav {
+    padding: 5%;
     overflow: hidden;
     width: 100%;
     height: 120px;
@@ -113,6 +114,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -120,9 +122,22 @@ body {
   .nav__imag {
     max-width: 80%;
     width: 250px;
-    margin: 10%;
-    margin-left: 5%;
-    padding: 0%;
+    margin: 5%;
+  }
+  .nav__tagss {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -408,7 +423,7 @@ body {
   padding: 5px;
   margin: auto;
   height: auto;
-  background-color: #d400ff;
+  background-color: #00ba7d;
   border-radius: 50%;
 }
 
@@ -417,7 +432,7 @@ body {
   padding: 5px;
   margin: auto;
   height: auto;
-  background-color: rgba(0, 255, 149, 0.733);
+  background-color: #ffd21b;
   border-radius: 50%;
 }
 
@@ -426,8 +441,113 @@ body {
   padding: 5px;
   margin: auto;
   height: auto;
-  background-color: #7700ff;
+  background-color: #c6b5b9;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 867px) {
+  .infoProduct {
+    max-width: 1300px;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .infoProduct__image {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    padding-left: 2%;
+  }
+  .infoProduct .description {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: justify;
+    padding-left: 2%;
+  }
+  .infoProduct .description__buy {
+    padding-top: 3%;
+    -webkit-box-pack: center, button;
+        -ms-flex-pack: center, button;
+            justify-content: center, button;
+    justify-content-font-size: 18px;
+    justify-content-font-weight: 200;
+    justify-content-color: #000000;
+    justify-content-width: 50%;
+    justify-content-height: 45px;
+    justify-content-margin: auto;
+    justify-content-border: 2px;
+    justify-content-border-color: #000000;
+    justify-content-border-style: solid;
+    justify-content-background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .tags {
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .tags img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  .tags__tagOne {
+    margin-top: 5%;
+    width: 40%;
+    padding: 5%;
+  }
+  .tags__tagTwo {
+    margin-top: 5%;
+    width: 40%;
+    padding: 5%;
+  }
+  .tags__tagThree {
+    margin-top: 5%;
+    width: 40%;
+    padding: 5%;
+  }
 }
 
 .name {
@@ -520,7 +640,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-right: 1.5px solid black;
 }
 
 .check__img img {
@@ -542,7 +661,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: justify;
-  border-left: 1.5px solid black;
 }
 
 .check__info h2 {
@@ -588,6 +706,54 @@ body {
   margin: auto;
   border-style: solid;
   background-color: black;
+}
+
+.total {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  height: auto;
+  padding-left: 2%;
+  padding-right: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1.5px solid black;
+}
+
+.total__number {
+  max-width: 1200px;
+  width: 60%;
+  height: 250px;
+  padding-left: 2%;
+  padding-right: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: justify;
+  border-right: 1.5px solid black;
+}
+
+.total__number p {
+  color: black;
+  font-size: 300px;
+  font-weight: 300;
+  text-align: center;
 }
 
 .filter {

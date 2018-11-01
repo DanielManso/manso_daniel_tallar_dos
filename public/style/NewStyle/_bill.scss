@@ -140,7 +140,8 @@
         padding: 5px;
         margin: auto;
         height: auto;
-        background-color: rgb(212, 0, 255);
+        background-color: #00ba7d;
+      
         border-radius: 50%;
 
 
@@ -151,7 +152,8 @@
         padding: 5px;
         margin: auto;
         height: auto;
-        background-color: rgba(0, 255, 149, 0.733);
+        background-color: #ffd21b;
+       
         border-radius: 50%;
 
     }
@@ -161,8 +163,120 @@
         padding: 5px;
         margin: auto;
         height: auto;
-        background-color: rgb(119, 0, 255);
+        background-color: #c6b5b9;
+      
         border-radius: 50%;
 
     }
 }
+
+@media screen and(max-width: 867px){  
+    .infoProduct {
+
+        max-width: 1300px;
+        width: 100%;
+        height: auto;
+        padding: 5%;;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    
+        &__image{
+            width: 100%;
+            margin: auto;
+            height: auto;
+            padding-left: 2%; 
+        }
+    
+    
+        .description{
+    
+            width: 100%;
+            height: auto;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            text-align: justify;  
+            padding-left: 2%; 
+            
+    
+            &__buy{
+                padding-top: 3%;
+                justify-content: center,
+
+            
+                button{
+                    font-size: 18px;
+                    font-weight: 200;
+                    color: #000000;
+                    width: 50%;
+                    height: 45px;
+                    margin: auto;
+                    border: 2px;
+                    border-color: #000000;
+                    border-style: solid;
+                    background-color: transparent,
+                    
+                }
+    
+            }
+    
+    
+        }
+    
+    
+    
+    
+    
+    }
+
+
+}
+
+@media screen and(max-width: 650px){ 
+    .tags{
+
+        max-width: 1200px;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    
+        img{
+            width: 100%;
+            height: auto;
+            margin: auto;
+        }
+    
+        &__tagOne{
+            margin-top: 5%;
+            width: 40%;
+            padding: 5%;          
+        }
+    
+        &__tagTwo{
+            margin-top: 5%;
+            width: 40%;
+            padding: 5%;  
+            
+        }
+    
+        &__tagThree{
+            margin-top: 5%;
+            width: 40%;
+            padding: 5%;  
+        }
+    }
+
+
+ }
